@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff">
+  <title>Explore Bestsellers | Zouk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span>Avail App Exclusive Offers</span><i></i><span>4.6 ★ Rating &nbsp;|&nbsp; 10L+ Downloads</span><a href="#products">Use App ↗</a></div>
+  <header class="site-header">
+    <div class="header-main">
+      <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Open menu"><span></span><span></span></button>
+      <button class="icon-button search-toggle" id="search-toggle" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg></button>
+      <a class="wordmark" href="#" aria-label="Zouk home">zouk<span>.</span></a>
+      <div class="header-actions"><button class="icon-button" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg></button><button class="icon-button bag-button" id="bag-button" aria-label="Shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><b id="cart-count">0</b></button></div>
+    </div>
+    <nav class="category-nav"><a class="sale-link" href="#products">Sale</a><a href="#products">New Arrivals</a><a href="#products">Bags</a><a href="#products">Backpacks</a><a href="#products">Wallets</a><a href="#products">DOTO — A Friend of Zouk</a><a href="#products">Zouk Tribe</a><a href="#products">Travel Collection</a><a href="#products">About</a><a href="#products">Gift Shop</a></nav>
+    <nav class="mobile-menu" id="mobile-menu"><a href="#products">Sale</a><a href="#products">New Arrivals</a><a href="#products">Bags</a><a href="#products">Backpacks</a><a href="#products">Wallets</a><a href="#products">Travel Collection</a><a href="#products">Gift Shop</a></nav>
+    <div class="search-bar" id="search-bar"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg><input id="product-search" type="search" placeholder="Search bestselling bags..."><button id="search-close" aria-label="Close search">×</button></div>
+  </header>
+  <main id="products" class="page-shell">
+    <nav class="offer-nav"><span>SALE</span><a href="#products">Sling BOGO at 1399</a><a href="#products">Tote BOGO</a><a href="#products">Wallet BOGO</a><a href="#products">Value Picks</a></nav>
+    <section class="collection-heading"><div><p class="breadcrumb">Home <span>/</span> Collections <span>/</span> Explore Bestsellers</p><h1>Explore Bestsellers</h1><p class="collection-subtitle">A few favourites, loved by many.</p></div><p class="result-count"><span id="result-count">12</span> styles</p></section>
+    <div class="collection-toolbar">
+      <button class="toolbar-button" id="filter-open"><svg viewBox="0 0 20 20"><path d="M3 5h14M5.5 10h9M8 15h4"/></svg>Filter <span>⌄</span></button>
+      <label class="sort-control"><svg viewBox="0 0 20 20"><path d="M7 4v12m0 0-3-3m3 3 3-3M13 16V4m0 0-3 3m3-3 3 3"/></svg><select id="sort-select" aria-label="Sort products"><option value="featured">Sort By</option><option value="popular">Best selling</option><option value="az">Alphabetically, A–Z</option><option value="za">Alphabetically, Z–A</option><option value="low">Price, low to high</option><option value="high">Price, high to low</option></select><span>⌄</span></label>
+      <div class="quick-filters"><button class="filter-chip active" data-tag="all">Bestseller</button><button class="filter-chip" data-tag="fast">Fast Selling</button><button class="filter-chip" data-tag="trending">Trending</button></div>
+      <button class="mobile-sort" id="mobile-sort">↕ Sort</button>
+    </div>
+    <div class="active-filters" id="active-filters"></div>
+    <div class="catalog-layout">
+      <aside class="filter-panel" id="filter-panel">
+        <div class="filter-header"><h2>Filters</h2><button class="clear-filters" id="clear-filters">Clear all</button><button class="filter-close" id="filter-close" aria-label="Close filters">×</button></div>
+        <label class="filter-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg><input id="filter-search" placeholder="Search filters"></label>
+        <details open><summary>Availability</summary><label class="check-row"><input id="in-stock" type="checkbox"><span>In stock only</span><small>1586</small></label></details>
+        <details open><summary>Category</summary><div class="filter-options"><label><input type="checkbox" name="category" value="Backpack"><span>Backpacks</span><small>35</small></label><label><input type="checkbox" name="category" value="Daypack"><span>Daypacks</span><small>21</small></label><label><input type="checkbox" name="category" value="Duffel"><span>Duffle Bags</span><small>14</small></label><label><input type="checkbox" name="category" value="Office"><span>Office Bags</span><small>48</small></label><label><input type="checkbox" name="category" value="Satchel"><span>Satchel Bags</span><small>15</small></label></div></details>
+        <details open><summary>Print Type</summary><div class="filter-options"><label><input type="checkbox" name="print" value="Floral"><span>Floral</span><small>43</small></label><label><input type="checkbox" name="print" value="Motif"><span>Motif</span><small>50</small></label><label><input type="checkbox" name="print" value="Geometric"><span>Geometric</span><small>12</small></label><label><input type="checkbox" name="print" value="Solid"><span>Solid</span><small>16</small></label></div></details>
+        <details open><summary>Color</summary><div class="filter-options colors"><label><input type="checkbox" name="color" value="Black"><i class="swatch black"></i>Black</label><label><input type="checkbox" name="color" value="Blue"><i class="swatch blue"></i>Blue</label><label><input type="checkbox" name="color" value="Multicolor"><i class="swatch multi"></i>Multicolor</label><label><input type="checkbox" name="color" value="Brown"><i class="swatch brown"></i>Brown</label></div></details>
+        <details open><summary>Price</summary><div class="price-label"><span>₹ 0</span><span>₹ <b id="price-cap">2,999</b></span></div><input class="range" type="range" min="500" max="3000" value="3000" id="price-range"><div class="price-fields"><label>₹ <input id="price-min" value="0" aria-label="Minimum price"></label><span>to</span><label>₹ <input id="price-max" value="2999" aria-label="Maximum price"></label></div></details>
+        <button class="apply-filters" id="apply-filters">Show results</button>
+      </aside>
+      <section class="product-area"><div class="product-grid" id="product-grid"></div><div class="no-results" id="no-results" hidden><span>✳</span><h2>Nothing in this print right now.</h2><p>Try another search or clear your filters.</p><button class="text-button" id="empty-clear">Clear filters</button></div><div class="pagination"><button disabled>‹</button><button class="current">1</button><button>2</button><button>3</button><span>…</span><button>40</button><button>›</button></div></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-brand"><a href="#" class="footer-logo">zouk<span>.</span></a><p>Thoughtfully made. Proudly Indian.</p></div><div><b>EXPLORE</b><a href="#products">Shop all</a><a href="#products">Bestsellers</a><a href="#products">New arrivals</a></div><div><b>QUICK LINKS</b><a href="#products">Track your order</a><a href="#products">Shipping & returns</a><a href="#products">Contact us</a></div><div class="newsletter"><b>NEWSLETTER</b><p>A little note from us, every now and then.</p><form id="newsletter-form"><input type="email" placeholder="Your email address" required><button aria-label="Subscribe">→</button></form><small id="newsletter-note"></small></div><div class="footer-bottom">ZOUK IS A BRAND UNDER SEA TURTLE PVT LTD.</div></footer>
+  <div class="scrim" id="scrim"></div><div class="cart-toast" id="cart-toast" role="status"></div><script src="app.js"></script>
+</body>
+</html>
